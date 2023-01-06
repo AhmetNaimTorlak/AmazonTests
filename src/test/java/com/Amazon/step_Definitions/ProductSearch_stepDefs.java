@@ -33,10 +33,11 @@ public class ProductSearch_stepDefs {
     public void the_user_should_be_able_to_see_items_and_add_to_card_it_and_verify_that() {
         productSearchPage.product_loc.click();
         this.productName = productSearchPage.productName_loc.getText();
+        String expectedMessage = "Added to Cart";
         productSearchPage.addToCardBtn_loc.click();
-        String expectedMessage = "Subtotal";
-        String actualMessage = productSearchPage.subtotal_loc.getText();
+        String actualMessage = productSearchPage.added_loc.getText();
         Assert.assertEquals("The product didn't add to cart", expectedMessage, actualMessage);
+
     }
 
     @Then("The user should be able to see item in the card")

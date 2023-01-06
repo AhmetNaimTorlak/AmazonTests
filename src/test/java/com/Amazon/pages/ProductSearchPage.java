@@ -19,8 +19,8 @@ public class ProductSearchPage extends BasePage {
     @FindBy(xpath = "//input[@id=\"add-to-cart-button\"]")
     public WebElement addToCardBtn_loc;
 
-    @FindBy(xpath = "//span[text()=\"Subtotal\"]")
-    public WebElement subtotal_loc;
+    @FindBy(xpath = "//span[@class=\"a-size-medium-plus a-color-base sw-atc-text a-text-bold\"]")
+    public WebElement added_loc;
 
     @FindBy(xpath = "//a[@href=\"/gp/cart/view.html?ref_=sw_gtc\"]")
     public WebElement goToCartBtn_loc;

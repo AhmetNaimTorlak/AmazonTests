@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class CartPage extends BasePage{
 
-    @FindBy(xpath = "//span[@class=\"a-truncate-cut\"][@style=\"height: 2.6em;\"]")
+    @FindBy(xpath = "//span[@class=\"a-size-base-plus a-color-base sc-product-title sc-grid-item-product-title\"]")
     public WebElement productName_loc;
 
 }
